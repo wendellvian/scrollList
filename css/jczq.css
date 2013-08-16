@@ -1,0 +1,62 @@
+@charset "utf-8";
+body{background:#f5f5f5;}
+a { color:#1f3b7b; text-decoration: none; }
+a:link, a:visited {text-decoration: none;}
+a:hover { color:#1f3b7b; text-decoration: underline; }
+.scLeft,.scRight,.lSlidLeft,.lSlidRight{background-image:url(../images/bjsprite.png);background-repeat:no-repeat;}
+.wraper{width:960px;padding:10px;margin:0 auto;background:#fff;}
+.slidBo{position:relative;width:960px;height:80px;margin-top:10px;}
+.slidLis{position:relative;width:918px;height:80px;margin:0 auto;overflow:hidden;}
+.slidLis ul{position:absolute;left:0;top:0;}
+.slidLis li{float:left;display:inline;width:142px;height:80px;padding:0 0 0 10px;margin-right:1px;background:#f5f5f5;}
+.slidLis li p{margin:6px 0;}
+.lsTime{color:#999;}
+.lsTime a{color:#999;}
+.lsTime a:hover{color:#999;}
+.teamGame{color:#333;}
+.teamGame a{color:#333;}
+.teamGame a:hover{color:#333;}
+.xyoLnk a{margin-right:15px;color:#1f377d;}
+.xyoLnk a:hover{color:#1f377d;}
+.slidLis li.linLnk{width:152px;padding:0;line-height:80px;text-align:center;font-family:"\5B8B\4F53";}
+.slidLis li.on{background:#e5e5e5;}
+.slidCtrl i{position:absolute;top:0;width:20px;height:80px;}
+.scLeft{left:0;background-position:0 0;}
+.scRight{right:0;background-position:-20px 0;}
+.scLeftOn{background-position:0 -81px;cursor:pointer;}
+.scRightOn{background-position:-20px -81px;cursor:pointer;}
+
+.lottery{width:220px;margin:10px auto;border:1px solid #ddd;background:#f9f9f9;}
+.lotterySlidBo{position:relative;padding:20px 0;overflow:hidden;zoom:1;}
+.lotterySli{position:relative;width:160px;height:79px;margin:0 auto;overflow:hidden;}
+.lotterySli ul{position:absolute;left:0;top:0;}
+.lotterySli li{float:left;display:inline;width:80px;text-align:center;}
+.lSlid i{position:absolute;top:40px;width:20px;height:20px;}
+.lSlidLeft{left:10px;background-position:-45px -37px;}
+.lSlidRight{right:10px;background-position:-66px -37px;}
+.lSlidLeftOn{background-position:-45px -58px;cursor:pointer;}
+.lSlidRightOn{background-position:-66px -58px;cursor:pointer;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
