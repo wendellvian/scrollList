@@ -1,6 +1,6 @@
-scrollList
+slideList
 ==========
 
-基于jQuery的滚动列表插件
+基于jQuery的滑动列表插件
 
 待更新
