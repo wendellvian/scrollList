@@ -1,6 +1,6 @@
 /*
- * slideList v1.0
- * Copyright (c) 2013 Wendell  http://blog.webql.info/
+ * slideList v1.1
+ * Copyright (c) 2013-2014 Wendell  http://blog.webql.info/
 */
 (function($){
 	$.fn.extend({
@@ -11,6 +11,7 @@
 				speed:10,                // 移动速度（单位ms）
 				aniSpeed:300,            // 运动速度（单位ms）
 				margin:0,                // 元素间间隔
+				border:0,                // 边框宽度
 				clickOn:false,           // 整屏滑动开关
 
 				eleLabel:"li",
@@ -25,7 +26,7 @@
 			var rightCtrlObj = $(options.rightCtrlClass);
 			var leftCtrlObj = $(options.leftCtrlClass);
 
-			var eleWidth = slideObj.find(options.eleLabel).width() + options.margin;	// 单个元素宽度
+			var eleWidth = slideObj.find(options.eleLabel).width() + options.margin + options.border;	// 单个元素宽度
 			var eleLength = 0;
 			slideObj.find(options.eleLabel).each(function(){
 				if($(this).is(":visible")){
@@ -98,7 +99,7 @@
 				}
 			}
 
-			if(options.clickOn){
+			if(options.clickOn && pageCount > page){
 				rightCtrlObj.click(function(){
 					if(!slideObj.is(":animated")){
 						if(page >= pageCount){
@@ -123,7 +124,7 @@
 						}
 					}
 				});
-			}else{
+			}else if(pageCount > page){
 				rightCtrlObj.mousedown(function(e){
 					if(e.which == 1){
 						timer = setTimeout(function(){
