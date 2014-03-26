@@ -12,6 +12,7 @@
 				aniSpeed:300,            // 运动速度（单位ms）
 				margin:0,                // 元素间间隔
 				border:0,                // 边框宽度
+				padding:0,               // 内边距
 				clickOn:false,           // 整屏滑动开关
 
 				eleLabel:"li",
@@ -26,7 +27,7 @@
 			var rightCtrlObj = $(options.rightCtrlClass);
 			var leftCtrlObj = $(options.leftCtrlClass);
 
-			var eleWidth = slideObj.find(options.eleLabel).width() + options.margin + options.border;	// 单个元素宽度
+			var eleWidth = slideObj.find(options.eleLabel).width() + options.margin + options.border + options.padding;	// 单个元素宽度
 			var eleLength = 0;
 			slideObj.find(options.eleLabel).each(function(){
 				if($(this).is(":visible")){
@@ -99,7 +100,7 @@
 				}
 			}
 
-			if(options.clickOn && pageCount > page){
+			if(options.clickOn && pageCount >= page){
 				rightCtrlObj.click(function(){
 					if(!slideObj.is(":animated")){
 						if(page >= pageCount){
@@ -124,7 +125,7 @@
 						}
 					}
 				});
-			}else if(pageCount > page){
+			}else if(pageCount >= page){
 				rightCtrlObj.mousedown(function(e){
 					if(e.which == 1){
 						timer = setTimeout(function(){
