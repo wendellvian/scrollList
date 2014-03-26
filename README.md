@@ -9,6 +9,8 @@ slideList
     speed:10,                          // 移动速度（单位ms）
     aniSpeed:300,                      // 运动速度（单位ms）
     margin:0,                          // 元素间间隔
+    border:0,                          // 边框宽度
+    padding:0,                         // 内边距
     clickOn:false,                     // 整屏滑动开关
 
     // 元素结构
